@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -a1 | sed 's|$|/,|' | sed '/^\.\.$/d' | sed '/^\.$/d' | LC_COLLATE=C sort -df | sed 's|/$||' | tr '\n' ','; echo;
+ls -xamp
